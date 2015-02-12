@@ -296,16 +296,6 @@ function search_autocomplete_form_configure_submit($form, &$form_state) {
   $callback = $values['callback_textfield'];
   // Static resource => type = 2.
   $data_type = $values['suggestions'];
-//   if ($data_type == 'callback' && $callback != '') {
-//     // If path is absolute:
-//     if (url_is_external($callback)) {
-//       // If path is internal:
-//       if (strcmp(substr($callback, 0, strlen($base_url)), $base_url) === 0) {
-//         // Get it relative.
-//         $callback = str_replace($base_url . "/", "", $callback);
-//       }
-//     }
-//   }
   // In the case of view, we use a custom callback to retrieve the view data.
   if ($data_type == 'view') {
     $callback = 'search_autocomplete/autocomplete/' . $values['fid'] . '/';
@@ -316,7 +306,7 @@ function search_autocomplete_form_configure_submit($form, &$form_state) {
     'value' => $values['all_results_value'],
     'link' => $values['all_results_link'],
     'group' => array(
-  	 'group_id' => 'all_results',
+      'group_id' => 'all_results',
     ),
   );
   $no_results = array(
@@ -324,7 +314,7 @@ function search_autocomplete_form_configure_submit($form, &$form_state) {
     'value' => $values['no_results_value'],
     'link' => $values['no_results_link'],
     'group' => array(
-      	 'group_id' => 'no_results',
+      'group_id' => 'no_results',
     ),
   );
 

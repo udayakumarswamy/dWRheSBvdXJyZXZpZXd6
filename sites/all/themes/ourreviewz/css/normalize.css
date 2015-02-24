@@ -560,6 +560,14 @@ table {
   padding: 0;
 }
 
+.breadcrumb ol li a {
+  color: #000;
+}
+
+.pager li a {
+  color: #000;
+}
+
 .block-taxonomy-menu-block ul {
     list-style-type: none;
     margin: 0;
@@ -611,4 +619,40 @@ table {
 .views-view-grid article  .fivestar-widget-static {
   width: 90px;
   margin: 0 auto;
+}
+
+article.view-mode-full .field-name-field-reviewimage {
+  width: 50%;
+  float: left;
+}
+
+article.view-mode-full .field-name-field-rating {
+  width: 50%;
+  float: left;
+}
+
+article.view-mode-full .field-name-field-user-rating {
+  width: 50%;
+  float: left;
+}
+
+article.view-mode-full .field-name-field-review-category {
+  width: 50%;
+  float: left;
+}
+
+article.view-mode-full .field-name-body {
+  width: 100%;
+  float: left;
+}
+
+.rate-widget {
+  width: 100%;
+  float: left;
+}
+
+ul.rate-fivestar-processed li {
+  width: 10px;
+float: left;
+display: block;
 }

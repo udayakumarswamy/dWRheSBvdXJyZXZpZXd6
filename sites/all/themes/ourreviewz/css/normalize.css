@@ -582,7 +582,7 @@ table {
     height: 48px;
 }
 
-.block-taxonomy-menu-block a:link, a:visited {
+.block-taxonomy-menu-block a:link,.block-taxonomy-menu-block a:visited {
     display: block;
     width: auto;
     font-weight: bold;
@@ -593,7 +593,7 @@ table {
     padding: 12px 10px 12px 10px;
 }
 
-.block-taxonomy-menu-block a:hover, a:active {
+.block-taxonomy-menu-block a:hover,.block-taxonomy-menu-block a:active {
   color: #EA5F73;
     background-color: #FFFFFF;
 }
@@ -655,4 +655,9 @@ ul.rate-fivestar-processed li {
   width: 10px;
 float: left;
 display: block;
+}
+
+#footer {
+  background: #444;
+  color : #fff;
 }
